@@ -1,8 +1,23 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import {useEffect, useState} from 'react';
 import MediaRow from './MediaRow';
 
-const MediaTable = ({mediaArray}) => {
-  console.log(mediaArray);
+const MediaTable = () => {
+  const [mediaArray, setMediaArray] = useState([]);
+  const getMedia = async () => {
+    try {
+      const response = await fetch('test.json');
+      const json = await response.json();
+      setMediaArray(json);
+    } catch (err) {
+      alert(err.message);
+    }
+  };
+
+  useEffect(() => {
+    getMedia();
+  }, []);
+
   return (
     <table>
       <tbody>
@@ -14,8 +29,6 @@ const MediaTable = ({mediaArray}) => {
   );
 };
 
-MediaTable.propTypes = {
-  mediaArray: PropTypes.array.isRequired,
-};
+MediaTable.propTypes = {};
 
 export default MediaTable;
