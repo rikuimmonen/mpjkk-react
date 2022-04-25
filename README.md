@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://users.metropolia.fi/~rikuimm/mpjkk-react-2-navigation/](http://users.metropolia.fi/~rikuimm/mpjkk-react-2-navigation/) to view it in your browser.
+Open [http://users.metropolia.fi/~rikuimm/mpjkk-react-2-login/](http://users.metropolia.fi/~rikuimm/mpjkk-react-2-login/) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
