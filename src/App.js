@@ -1,22 +1,8 @@
 import './App.css';
-import Nav from './components/Nav';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from './views/Home';
-import Profile from './views/Profile';
-import Single from './views/Single';
+import MediaTable from './components/MediaTable';
 
 const App = () => {
-  return (
-    // eslint-disable-next-line no-undef
-    <Router basename={process.env.PUBLIC_URL}>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/single" element={<Single />} />
-      </Routes>
-    </Router>
-  );
+  return <MediaTable />;
 };
 
 export default App;
